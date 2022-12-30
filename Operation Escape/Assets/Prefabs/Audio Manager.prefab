@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5408592143132271507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5408592143132271504}
+  - component: {fileID: 5408592143132271505}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5408592143132271504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408592143132271507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5408592143132271505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408592143132271507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a49a74f0a5b40941b2a2186dc22fc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMusicMute: 0
+  isSFXMute: 0
+  sounds:
+  - name: GameBGM
+    clip: {fileID: 8300000, guid: 62d472e4af9a2fd44ba6b2192d97b190, type: 3}
+    loop: 1
+    volume: 0.5
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: ac4fd234cf6161d40b42c9686f3f0f73, type: 3}
+    loop: 0
+    volume: 0.3
+    source: {fileID: 0}
+  - name: PlayerStep
+    clip: {fileID: 8300000, guid: b347b97e52389e54ab44b45617458041, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}
+  - name: PlayerDialogue
+    clip: {fileID: 8300000, guid: 86caca7b5b0b4f949bec09f2513a0ec2, type: 3}
+    loop: 0
+    volume: 0.1
+    source: {fileID: 0}
+  - name: WallBump
+    clip: {fileID: 8300000, guid: 2ce15c2034ce209429caf186a29eaec2, type: 3}
+    loop: 0
+    volume: 1
+    source: {fileID: 0}
+  - name: Escaped
+    clip: {fileID: 8300000, guid: c10768ea2cbdf5b4db26b533c52d86d4, type: 3}
+    loop: 0
+    volume: 1
+    source: {fileID: 0}
+  - name: Trapped
+    clip: {fileID: 8300000, guid: 2317915f0a527e5428d1c58c0da0d034, type: 3}
+    loop: 0
+    volume: 1
+    source: {fileID: 0}
+  - name: NumberTile
+    clip: {fileID: 8300000, guid: 9e4bb17bb3709914093e2ba9e1fb2e1a, type: 3}
+    loop: 0
+    volume: 0.5
+    source: {fileID: 0}
+  - name: SwitchTile
+    clip: {fileID: 8300000, guid: c40f80d77ef014149830706766f285f3, type: 3}
+    loop: 0
+    volume: 0.5
+    source: {fileID: 0}
+  - name: AddMode
+    clip: {fileID: 8300000, guid: 0297ad33a8ff0fc45a8adb07ca0fb007, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}
+  - name: SubMode
+    clip: {fileID: 8300000, guid: 87b570204de416a448a0b4fc1515f99d, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}
+  - name: MultiMode
+    clip: {fileID: 8300000, guid: 75ed8bd7409550343b5bdccafeb0e02a, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}
+  - name: DivMode
+    clip: {fileID: 8300000, guid: 80213819e4fadaf42b1c8ec986445c20, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}
+  - name: NewMechanic
+    clip: {fileID: 8300000, guid: 8201ef20bb04dc541bf0f682edcfe65a, type: 3}
+    loop: 0
+    volume: 0.2
+    source: {fileID: 0}

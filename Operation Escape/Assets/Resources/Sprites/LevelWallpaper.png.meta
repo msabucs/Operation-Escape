@@ -1,0 +1,1212 @@
+fileFormatVersion: 2
+guid: 9473650177c63cd49be31a1972a76581
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -393429784008147588
+    second: LevelWallpaper_0
+  - first:
+      213: -1671429755150267573
+    second: LevelWallpaper_1
+  - first:
+      213: -2805029797598541819
+    second: LevelWallpaper_2
+  - first:
+      213: -5926769927539279790
+    second: LevelWallpaper_3
+  - first:
+      213: -7945920977206333998
+    second: LevelWallpaper_4
+  - first:
+      213: 5319564208051371949
+    second: LevelWallpaper_5
+  - first:
+      213: 3671079495572108560
+    second: LevelWallpaper_6
+  - first:
+      213: -3511054768114178296
+    second: LevelWallpaper_7
+  - first:
+      213: -4554429195562188552
+    second: LevelWallpaper_8
+  - first:
+      213: 7245242008373152509
+    second: LevelWallpaper_9
+  - first:
+      213: -7316174155387810504
+    second: LevelWallpaper_10
+  - first:
+      213: -5370685259143919591
+    second: LevelWallpaper_11
+  - first:
+      213: -8732917991053796617
+    second: LevelWallpaper_12
+  - first:
+      213: -6546952405337156297
+    second: LevelWallpaper_13
+  - first:
+      213: -2572560924927374757
+    second: LevelWallpaper_14
+  - first:
+      213: 868999420835242257
+    second: LevelWallpaper_15
+  - first:
+      213: -3984774194101177354
+    second: LevelWallpaper_16
+  - first:
+      213: -4303196744262871983
+    second: LevelWallpaper_17
+  - first:
+      213: -1622659555632996293
+    second: LevelWallpaper_18
+  - first:
+      213: -2379325157103442579
+    second: LevelWallpaper_19
+  - first:
+      213: -7805736433495368587
+    second: LevelWallpaper_20
+  - first:
+      213: -5541711163492343372
+    second: LevelWallpaper_21
+  - first:
+      213: 6469813971377152304
+    second: LevelWallpaper_22
+  - first:
+      213: 8235964029986038657
+    second: LevelWallpaper_23
+  - first:
+      213: -2249263639689350487
+    second: LevelWallpaper_24
+  - first:
+      213: 582735349277230095
+    second: LevelWallpaper_25
+  - first:
+      213: 2748308200668382712
+    second: LevelWallpaper_26
+  - first:
+      213: 8988777711912976257
+    second: LevelWallpaper_27
+  - first:
+      213: 8525611034214993008
+    second: LevelWallpaper_28
+  - first:
+      213: 313646972965086198
+    second: LevelWallpaper_29
+  - first:
+      213: -7421713214268207899
+    second: LevelWallpaper_30
+  - first:
+      213: -4736239941985746176
+    second: LevelWallpaper_31
+  - first:
+      213: -1640862986972836603
+    second: LevelWallpaper_32
+  - first:
+      213: 3076366055537773700
+    second: LevelWallpaper_33
+  - first:
+      213: -5923015383185732016
+    second: LevelWallpaper_34
+  - first:
+      213: 7584812974898746789
+    second: LevelWallpaper_35
+  - first:
+      213: -6803289469218256239
+    second: LevelWallpaper_36
+  - first:
+      213: 2490366046140148341
+    second: LevelWallpaper_37
+  - first:
+      213: 1271620198273724986
+    second: LevelWallpaper_38
+  - first:
+      213: -2653462423007394233
+    second: LevelWallpaper_39
+  - first:
+      213: -4628027142841812054
+    second: LevelWallpaper_40
+  - first:
+      213: 1675679704325249680
+    second: LevelWallpaper_41
+  - first:
+      213: -8832394597528313283
+    second: LevelWallpaper_42
+  - first:
+      213: 4129107043507074888
+    second: LevelWallpaper_43
+  - first:
+      213: -5926053694216224732
+    second: LevelWallpaper_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LevelWallpaper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7db22822b14a8af0800000000000000
+      internalID: -393429784008147588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b00494e73edc8e0800000000000000
+      internalID: -1671429755150267573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_2
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508c0c1c2488219d0800000000000000
+      internalID: -2805029797598541819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_3
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258bd8bf622efbda0800000000000000
+      internalID: -5926769927539279790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_4
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddaa4478fa6ab190800000000000000
+      internalID: -7945920977206333998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_5
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafb8c48673e2d940800000000000000
+      internalID: 5319564208051371949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_6
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015bbcbd95b42f230800000000000000
+      internalID: 3671079495572108560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_7
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807ec9f6a4a364fc0800000000000000
+      internalID: -3511054768114178296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_8
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4800
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f009dbe6ca6bc0c0800000000000000
+      internalID: -4554429195562188552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfac1dc38354c8460800000000000000
+      internalID: 7245242008373152509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d47315e5ab77a90800000000000000
+      internalID: -7316174155387810504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_11
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918cc40463e7775b0800000000000000
+      internalID: -5370685259143919591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_12
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fade9a2b517ec680800000000000000
+      internalID: -8732917991053796617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_13
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7355d7e797d8425a0800000000000000
+      internalID: -6546952405337156297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_14
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a47a2087d6c4cd0800000000000000
+      internalID: -2572560924927374757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_15
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111a7ec7e5e4f0c00800000000000000
+      internalID: 868999420835242257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_16
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b4729bfc33b8c0800000000000000
+      internalID: -3984774194101177354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_17
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3600
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15418934c59f744c0800000000000000
+      internalID: -4303196744262871983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b302a1b3bb72b79e0800000000000000
+      internalID: -1622659555632996293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65e2b53060fafed0800000000000000
+      internalID: -2379325157103442579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_20
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c1f2ff1147ca390800000000000000
+      internalID: -7805736433495368587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_21
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1e83cde03e713b0800000000000000
+      internalID: -5541711163492343372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_22
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0316bc6478569c950800000000000000
+      internalID: 6469813971377152304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_23
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183663636a50c4270800000000000000
+      internalID: 8235964029986038657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_24
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a23d1603a209c0e0800000000000000
+      internalID: -2249263639689350487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_25
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f048bb376ba461800800000000000000
+      internalID: 582735349277230095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_26
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2400
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5c1225fb3f32620800000000000000
+      internalID: 2748308200668382712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f758354bd8ebc70800000000000000
+      internalID: 8988777711912976257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_28
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c0983a01e015670800000000000000
+      internalID: 8525611034214993008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_29
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3e578924c4a5400800000000000000
+      internalID: 313646972965086198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_30
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec88be4727c00990800000000000000
+      internalID: -7421713214268207899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_31
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0034ceecdde754eb0800000000000000
+      internalID: -4736239941985746176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_32
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dc5689ecb7a39e0800000000000000
+      internalID: -1640862986972836603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_33
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c0663d0a271ba20800000000000000
+      internalID: 3076366055537773700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_34
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e4a06f3e83dcda0800000000000000
+      internalID: -5923015383185732016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_35
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1200
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a51d90f63ba24960800000000000000
+      internalID: 7584812974898746789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a071be54cd591a0800000000000000
+      internalID: -6803289469218256239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_37
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57aa0e479be8f8220800000000000000
+      internalID: 2490366046140148341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32315f35d3b5a110800000000000000
+      internalID: 1271620198273724986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_39
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7460cc32cf10d2bd0800000000000000
+      internalID: -2653462423007394233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_40
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab3c0c75d1f5cfb0800000000000000
+      internalID: -4628027142841812054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_41
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a53ad10d5314710800000000000000
+      internalID: 1675679704325249680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_42
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32ee3ad8e70d6580800000000000000
+      internalID: -8832394597528313283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_43
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8477dc7aaf88d4930800000000000000
+      internalID: 4129107043507074888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelWallpaper_44
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 675
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420c95c009d62cda0800000000000000
+      internalID: -5926053694216224732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
