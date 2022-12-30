@@ -266,7 +266,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: number
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: newSpriteFileNo
@@ -282,11 +282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.z
@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474844, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_Name
-      value: Number Tile 1
+      value: Number Tile 2
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474844, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_IsActive
@@ -1649,11 +1649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 955969829849606671, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 955969829849606671, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 955969829849606671, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3546,11 +3546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4172,11 +4172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4361,11 +4361,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4533,11 +4533,11 @@ MonoBehaviour:
   txtRoomNumber: {fileID: 0}
   panelNewMechanic: {fileID: 0}
   panelEscaped: {fileID: 0}
-  goalNumberList: 290000003b0000001f000000
+  goalNumberList: 290000003b00000030000000
   currentNumberList:
   - 8
   - 8
-  - 6
+  - 8
   tileVariantList:
   - {fileID: 1835250873}
   - {fileID: 1818890552}
@@ -4717,7 +4717,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: number
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: newSpriteFileNo
@@ -4773,7 +4773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474844, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_Name
-      value: Number Tile 2
+      value: Number Tile 1
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474844, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_IsActive
@@ -4954,11 +4954,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2037578568917995068, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5226,11 +5226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474843, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_LocalPosition.z

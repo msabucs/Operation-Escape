@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime); 
 
         // PC CONTROLLER
-        /* Check if distance between player and move point is less than or equal to 0.5
+        // Check if distance between player and move point is less than or equal to 0.5
         if (Vector3.Distance(transform.position, movePoint.position) <= 0.5f && !isMoving && gameManager.moves > 0) {
 
             // Move left and right
@@ -50,10 +50,10 @@ public class PlayerMovement : MonoBehaviour {
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f) {
                 StartCoroutine(MovePlayer(new Vector3(0, Input.GetAxisRaw("Vertical"), 0)));
             }
-        }*/
+        }
 
         // MOBILE CONTROLLER
-        if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+        /*if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
 
             startTouchPos = Input.GetTouch(0).position;
             //Debug.Log(startTouchPos);
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour {
                 else if(endTouchPos.y > startTouchPos.y + 300)
                     StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
             } 
-        }
+        }*/
 
         // Check if animation stops playing
         if(this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) {
