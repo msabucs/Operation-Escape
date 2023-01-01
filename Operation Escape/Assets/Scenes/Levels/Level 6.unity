@@ -5410,7 +5410,7 @@ MonoBehaviour:
   - {fileID: 1543203605}
   - {fileID: 219217529}
   - {fileID: 995681986}
-  moves: 21
+  moves: 20
   roomNumber: 6
   player: {fileID: 310953586}
   playerMP: {fileID: 1889397922}

@@ -4991,7 +4991,7 @@ MonoBehaviour:
   - {fileID: 1368665007}
   - {fileID: 2076669649}
   - {fileID: 1215170459}
-  moves: 15
+  moves: 14
   roomNumber: 5
   player: {fileID: 310953586}
   playerMP: {fileID: 1889397922}

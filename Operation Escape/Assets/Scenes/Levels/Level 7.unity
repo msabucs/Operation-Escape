@@ -5705,7 +5705,7 @@ MonoBehaviour:
   - {fileID: 1225027137}
   - {fileID: 1002930765}
   - {fileID: 812474054}
-  moves: 17
+  moves: 16
   roomNumber: 7
   player: {fileID: 310953586}
   playerMP: {fileID: 1889397922}
@@ -6617,7 +6617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5141466276299474844, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}

@@ -284,21 +284,19 @@ public class GameManager : MonoBehaviour {
             else {
                 SceneManager.LoadScene("Level " +randomLevel);
             }
-
-            FindObjectOfType<AudioManager>().Play("ButtonClick");
         }
         else {
 
             // All levels except level 1o
-            if(!(sceneIndex == 12)) {
+            if(!(sceneIndex == 12))
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                FindObjectOfType<AudioManager>().Play("ButtonClick");
-            }
             else {
                 panelEscaped.SetActive(true);
                 animPanelEscaped.Play("Congrats");
             }
         }
+
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
     }
 
     // Go to main menu
@@ -350,5 +348,6 @@ public class GameManager : MonoBehaviour {
     // Go to main menu after completing level 10
     public void BackToMainMenuClicked() {
         SceneManager.LoadScene(0);
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
     }
 }
