@@ -47,7 +47,7 @@ MonoBehaviour:
   isSFXMute: 0
   sounds:
   - name: GameBGM
-    clip: {fileID: 8300000, guid: 62d472e4af9a2fd44ba6b2192d97b190, type: 3}
+    clip: {fileID: 8300000, guid: b3c695977e99db64cbefa86d10d7a8d2, type: 3}
     loop: 1
     volume: 0.5
     source: {fileID: 0}

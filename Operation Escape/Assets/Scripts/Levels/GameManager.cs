@@ -6,14 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     [HideInInspector] public Vector3 initialPlayerPos, initialPlayerMPPos;
-    [HideInInspector] public int goalNumber, initialMoves, sceneIndex, randomLevel, randomVariant;
+    [HideInInspector] public int goalNumber, initialMoves, sceneIndex, randomLevel, chosenVariant;
     [HideInInspector] public float currentNumber, initialNumber;
     [HideInInspector] public bool isEqual, animDone, isRestartPressed, isGamePaused;
     [HideInInspector] public Text txtCurrentNumber, txtGoal, txtGoalNumber, txtMoves, txtMovesNumber, txtRoom, txtRoomNumber;
     [HideInInspector] public GameObject panelNewMechanic, panelEscaped;
     public List<int> goalNumberList;
     public List<float> currentNumberList;
-    public List<GameObject> tileVariantList;
     public int moves, roomNumber;
     public GameObject player, playerMP, panelPause, panelInGame;
     public Button btnNext;
@@ -22,6 +21,7 @@ public class GameManager : MonoBehaviour {
     Animator animPanelNewMechanic, animPanelEscaped;
     PlayerMovement playerMovement;
     NumberScreen numScreen;
+    GridManager gridManager;
     DialogueManager dialogueManager;
 
     void Start() {
@@ -29,18 +29,20 @@ public class GameManager : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;
 
+        //gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
+        numScreen = GameObject.Find("Number Screen").GetComponent<NumberScreen>();
         playerMovement = player.GetComponent<PlayerMovement>();
 
-        numScreen = GameObject.Find("Number Screen").GetComponent<NumberScreen>();
-
-        // Load a random variant for the level
+        // Change level objective depending on the level variant
         if(sceneIndex != 2) {
-            randomVariant = Random.Range(0,3);
+
+            gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
+            chosenVariant = gridManager.randomVariant;
+            
             for(int x = 0; x <= 2; x++) {
-                if(x == randomVariant) {
+                if(x == chosenVariant) {
                     currentNumber = currentNumberList[x];
                     goalNumber = goalNumberList[x];
-                    tileVariantList[x].SetActive(true);
                 }
             }
         }

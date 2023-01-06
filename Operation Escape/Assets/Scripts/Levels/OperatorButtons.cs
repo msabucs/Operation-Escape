@@ -18,28 +18,28 @@ public class OperatorButtons : MonoBehaviour {
 
             opNumber = 1;
             buttonAdd.interactable = false;
-            FindObjectOfType<NumberTile>().CurrentOperator(opNumber);
+            StartCoroutine(DefaultOperator(opNumber));
         }
         // Set level to subtraction mode
         else if(isSubDefault) {
 
             opNumber = 2;
             buttonSub.interactable = false;
-            FindObjectOfType<NumberTile>().CurrentOperator(opNumber);
+            StartCoroutine(DefaultOperator(opNumber));
         }
         // Set level to multiplication mode
         else if(isMultiDefault) {
 
             opNumber = 3;
             buttonMulti.interactable = false;
-            FindObjectOfType<NumberTile>().CurrentOperator(opNumber);
+            StartCoroutine(DefaultOperator(opNumber));
         }
         // Set level to division mode
         else if(isDivDefault) {
 
             opNumber = 4;
             buttonDiv.interactable = false;
-            FindObjectOfType<NumberTile>().CurrentOperator(opNumber);
+            StartCoroutine(DefaultOperator(opNumber));
         }
     }
     
@@ -53,6 +53,13 @@ public class OperatorButtons : MonoBehaviour {
             buttonDiv.interactable = false;
         }
 
+    }
+
+    // Adding a short delay before getting current operator
+    IEnumerator DefaultOperator(int opNumber) {
+
+        yield return new WaitForSeconds(0.25f);
+        FindObjectOfType<NumberTile>().CurrentOperator(opNumber);
     }
 
     // Set level to addition mode
