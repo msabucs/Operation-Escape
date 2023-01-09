@@ -20,6 +20,7 @@ public class SwitchTile : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
 
         if(col.gameObject == player) {
+            
             sp.sprite = newSprite;
             gameManager.currentNumber *= -1;
             gameManager.moves--;

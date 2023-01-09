@@ -1715,6 +1715,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1194084916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194084918}
+  - component: {fileID: 1194084917}
+  m_Layer: 0
+  m_Name: Grid Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1194084917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194084916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0934be2db9765349a0a757b69227fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileNum: 0
+  randomVariant: 0
+  numtileVarIndex: 0
+  width: 5
+  height: 5
+  wallTile: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  normalTile: {fileID: 2037578568917995069, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
+  goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
+  numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
+  switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
+  tileType: 01000000010000000300000001000000010000000100000000000000000000000000000001000000020000000000000000000000000000000300000001000000000000000000000000000000010000000100000001000000000000000100000001000000
+  numTileVar0: 0600000002000000
+  numTileVar1: 0500000002000000
+  numTileVar2: 0400000002000000
+--- !u!4 &1194084918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194084916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1365596559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1870,6 @@ MonoBehaviour:
   currentNumber: 3
   initialNumber: 0
   isEqual: 0
-  animDone: 0
   isRestartPressed: 0
   isGamePaused: 0
   txtCurrentNumber: {fileID: 0}
@@ -1825,11 +1881,11 @@ MonoBehaviour:
   txtRoomNumber: {fileID: 0}
   panelNewMechanic: {fileID: 0}
   panelEscaped: {fileID: 0}
-  goalNumberList: 42000000240000001c000000
+  goalNumberList: 400000002b0000001a000000
   currentNumberList:
-  - 3
-  - 3
-  - 3
+  - 2
+  - 2
+  - 2
   moves: 20
   roomNumber: 6
   player: {fileID: 310953586}
@@ -1985,63 +2041,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6010446832046880309, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
   m_PrefabInstance: {fileID: 880454197}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1871721552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1871721554}
-  - component: {fileID: 1871721553}
-  m_Layer: 0
-  m_Name: Grid Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1871721553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871721552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0934be2db9765349a0a757b69227fd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileNum: 0
-  randomVariant: 0
-  numtileVarIndex: 0
-  width: 5
-  height: 5
-  wallTile: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
-  normalTile: {fileID: 2037578568917995069, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
-  goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
-  numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
-  switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
-  tileType: 01000000010000000300000001000000010000000100000000000000000000000000000001000000020000000000000000000000000000000300000001000000000000000000000000000000010000000100000001000000000000000100000001000000
-  numTileVar0: 0600000001000000
-  numTileVar1: 0600000001000000
-  numTileVar2: 0400000001000000
---- !u!4 &1871721554
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871721552}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889397922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 955969829371374968, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}

@@ -31,8 +31,12 @@ public class NormalTile : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
 
         if(col.gameObject == player) {
+
             sp.sprite = newSprite;
-            gameManager.moves--;
+
+            // Don't consume move on the first load and restarts of the level
+            if(gameManager.time > 0.05f)
+                gameManager.moves--;
         }
     }
 

@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
     [HideInInspector] public int sceneIndex;
-    [HideInInspector] public bool isMoving, animDone;
+    [HideInInspector] public bool isMoving;
     [HideInInspector] public float animX, animY;
     [HideInInspector] public Vector2 startTouchPos, endTouchPos;
     public float moveSpeed = 5f;
     public Transform movePoint;
     public LayerMask obstacleLayer;
     public Animator animator;
+    public CircleCollider2D circleCol;
     GameManager gameManager;
     DialogueManager dialogueManager;
 
@@ -26,16 +27,17 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        circleCol = GetComponent<CircleCollider2D>();
 
         // Separate player and move point
-        movePoint.parent = null;  
+        movePoint.parent = null;
 
         animator.enabled = false;
     }
 
     void Update() {
 
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime); 
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
         // PC CONTROLLER
         // Check if distance between player and move point is less than or equal to 0.5
@@ -81,14 +83,6 @@ public class PlayerMovement : MonoBehaviour {
                     StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
             } 
         }*/
-
-        // Check if animation stops playing
-        if(this.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) {
-            animDone = false;
-        } 
-        else {
-            animDone = true;
-        }
     }
 
     IEnumerator MovePlayer(Vector3 direction) {

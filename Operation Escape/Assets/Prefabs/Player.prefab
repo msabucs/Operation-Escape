@@ -80,15 +80,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneIndex: 0
   isMoving: 0
-  animDone: 0
   animX: 0
   animY: 0
+  startTouchPos: {x: 0, y: 0}
+  endTouchPos: {x: 0, y: 0}
   moveSpeed: 5
   movePoint: {fileID: 955969829371374969}
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
   animator: {fileID: 601476805653961120}
+  circleCol: {fileID: 955969829849606669}
 --- !u!212 &955969829849606670
 SpriteRenderer:
   m_ObjectHideFlags: 0

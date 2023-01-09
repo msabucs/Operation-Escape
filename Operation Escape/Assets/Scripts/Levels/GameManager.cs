@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
     [HideInInspector] public Vector3 initialPlayerPos, initialPlayerMPPos;
     [HideInInspector] public int goalNumber, initialMoves, sceneIndex, randomLevel, chosenVariant;
-    [HideInInspector] public float currentNumber, initialNumber;
-    [HideInInspector] public bool isEqual, animDone, isRestartPressed, isGamePaused;
+    [HideInInspector] public float currentNumber, initialNumber, startTime, elapsedTime, time;
+    [HideInInspector] public bool isEqual, isRestartPressed, isGamePaused;
     [HideInInspector] public Text txtCurrentNumber, txtGoal, txtGoalNumber, txtMoves, txtMovesNumber, txtRoom, txtRoomNumber;
     [HideInInspector] public GameObject panelNewMechanic, panelEscaped;
     public List<int> goalNumberList;
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
     void Start() {
 
         Scene scene = SceneManager.GetActiveScene();
-        sceneIndex = scene.buildIndex;
+        sceneIndex = scene.buildIndex;       
 
         //gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
         numScreen = GameObject.Find("Number Screen").GetComponent<NumberScreen>();
@@ -104,6 +104,9 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
 
+        // Innate game timer
+        time += Time.deltaTime;
+
         // Make next level button interactable when level is complete
         if(txtCurrentNumber.text == "ESCAPED") {
             btnNext.interactable = true;
@@ -132,7 +135,7 @@ public class GameManager : MonoBehaviour {
                 }      
             }
             else {
-                if(animDone == false)
+                if(playerMovement.isMoving == false)
                     playerMovement.enabled = false;
             }
         }
@@ -151,9 +154,6 @@ public class GameManager : MonoBehaviour {
                 }
             }
         }
-        
-        // Check if player animation stops playing
-        animDone = playerMovement.animDone;
 
         MovesLeft();
         CurrentNumber();
@@ -201,7 +201,7 @@ public class GameManager : MonoBehaviour {
         // Disable player movement when escaped
         if(moves <= 0 || isEqual) {
 
-            if(animDone == false)
+            if(playerMovement.isMoving == false)
                 playerMovement.enabled = false;
             
             if(sceneIndex == 2)
@@ -245,17 +245,15 @@ public class GameManager : MonoBehaviour {
     // Restart level
     public void RestartClicked() {
 
+        // Reset game timer to 0
+        time = 0;
+
         // Reset player position
         player.transform.position = initialPlayerPos;
         playerMP.transform.position = initialPlayerMPPos;
 
-        if(moves == initialMoves || moves == initialMoves + 1) {
-            moves = initialMoves;
-        }
-        else {
-            moves = initialMoves + 1;
-        }
-
+        moves = initialMoves;        
+        
         isEqual = false;
         isRestartPressed = true;
 

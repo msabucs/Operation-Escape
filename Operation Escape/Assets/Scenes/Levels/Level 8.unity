@@ -269,6 +269,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39a808db4aaeb7459a0332586c076dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &488847963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488847965}
+  - component: {fileID: 488847964}
+  m_Layer: 0
+  m_Name: Grid Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &488847964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488847963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0934be2db9765349a0a757b69227fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileNum: 0
+  randomVariant: 0
+  numtileVarIndex: 0
+  width: 5
+  height: 5
+  wallTile: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  normalTile: {fileID: 2037578568917995069, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
+  goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
+  numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
+  switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
+  tileType: 00000000030000000000000001000000010000000000000000000000040000000100000001000000000000000300000000000000000000000000000001000000010000000100000001000000000000000100000001000000020000000000000000000000
+  numTileVar0: 0300000006000000
+  numTileVar1: 0300000006000000
+  numTileVar2: 0400000008000000
+--- !u!4 &488847965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488847963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,7 +1498,6 @@ MonoBehaviour:
   currentNumber: 15
   initialNumber: 0
   isEqual: 0
-  animDone: 0
   isRestartPressed: 0
   isGamePaused: 0
   txtCurrentNumber: {fileID: 0}
@@ -1567,63 +1623,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 955969829371374968, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
   m_PrefabInstance: {fileID: 618328521}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2090250054
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2090250056}
-  - component: {fileID: 2090250055}
-  m_Layer: 0
-  m_Name: Grid Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2090250055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090250054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0934be2db9765349a0a757b69227fd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileNum: 0
-  randomVariant: 0
-  numtileVarIndex: 0
-  width: 5
-  height: 5
-  wallTile: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
-  normalTile: {fileID: 2037578568917995069, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
-  goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
-  numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
-  switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
-  tileType: 00000000030000000000000001000000010000000000000000000000040000000100000001000000000000000300000000000000000000000000000001000000010000000100000001000000000000000100000001000000020000000000000000000000
-  numTileVar0: 0300000006000000
-  numTileVar1: 0300000006000000
-  numTileVar2: 0400000008000000
---- !u!4 &2090250056
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090250054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2125793662 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6010446831954135545, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
