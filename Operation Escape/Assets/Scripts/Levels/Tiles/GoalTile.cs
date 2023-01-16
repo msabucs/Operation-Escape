@@ -22,8 +22,6 @@ public class GoalTile : MonoBehaviour {
         }
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-
-        sp = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
     }
 

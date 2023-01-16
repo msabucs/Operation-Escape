@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NumberTile : MonoBehaviour {
     [HideInInspector] public GameObject player;
     [HideInInspector] public static int currentOpNum;
-    [HideInInspector] public int sceneIndex, origSpriteFileNo, newSpriteFileNo;
+    [HideInInspector] public int sceneIndex, currentHintIndex, origSpriteFileNo, newSpriteFileNo, hintSpriteFileNo;
     public int number; 
     public SpriteRenderer sp;
     Object[] numberTileSprites;
@@ -24,12 +24,11 @@ public class NumberTile : MonoBehaviour {
         }
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        player = GameObject.Find("Player");
 
         origSpriteFileNo = (number * 2) + 1;
         newSpriteFileNo = (number * 2) + 2;
-
-        sp = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player");
+        hintSpriteFileNo = 31 - (10 - number);
 
         numberTileSprites = Resources.LoadAll("Sprites/Tiles/NumberTile");   
         sp.sprite = (Sprite)numberTileSprites[origSpriteFileNo];
@@ -73,6 +72,31 @@ public class NumberTile : MonoBehaviour {
                     dialogueManager.dialogueCounter++;
                 }
             }
+
+            if(GameObject.Find("Game Manager").GetComponent<HintButton>() != null) {
+
+                if(FindObjectOfType<HintButton>().chosenVariant == 0) {
+
+                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
+                    if(FindObjectOfType<HintButton>().hintNumList0[currentHintIndex] == number) {
+                        FindObjectOfType<HintButton>().nextNumIndex++;
+                    }
+                }
+                else if(FindObjectOfType<HintButton>().chosenVariant == 1) {
+
+                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
+                    if(FindObjectOfType<HintButton>().hintNumList1[currentHintIndex] == number) {
+                            FindObjectOfType<HintButton>().nextNumIndex++;
+                    }
+                }
+                else {
+
+                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
+                    if(FindObjectOfType<HintButton>().hintNumList2[currentHintIndex] == number) {
+                            FindObjectOfType<HintButton>().nextNumIndex++;
+                    }
+                }
+            }
         
             sp.sprite = (Sprite)numberTileSprites[newSpriteFileNo];
             gameManager.moves--;
@@ -87,5 +111,12 @@ public class NumberTile : MonoBehaviour {
         if(col.gameObject == player) {
             sp.sprite = (Sprite)numberTileSprites[origSpriteFileNo];
         }
+    }
+
+    public IEnumerator HintedNumber() {
+
+        sp.sprite = (Sprite)numberTileSprites[hintSpriteFileNo];
+        yield return new WaitForSeconds(2f);
+        sp.sprite = (Sprite)numberTileSprites[origSpriteFileNo];
     }
 }

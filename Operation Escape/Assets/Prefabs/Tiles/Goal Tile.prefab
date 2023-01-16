@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1139662549370195782}
   m_Layer: 7
   m_Name: Goal Tile
-  m_TagString: Goal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047cbaeb3add8f142b93179135e022f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneIndex: 0
   player: {fileID: 955969829849606705, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
   sp: {fileID: 8368067504448721982}
   origSprite: {fileID: 2810180194748809789, guid: 6d37c1c99803d954086128915fd94b01, type: 3}

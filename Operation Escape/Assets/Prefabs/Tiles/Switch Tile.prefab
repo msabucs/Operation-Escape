@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6543688712099332837}
   m_Layer: 0
   m_Name: Switch Tile
-  m_TagString: Switch
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,6 @@ MonoBehaviour:
   sp: {fileID: 6543688712099332836}
   origSprite: {fileID: 2617801809701623793, guid: d81527563d35ccd4db5bacb13af6855b, type: 3}
   newSprite: {fileID: 4435127181266313562, guid: d81527563d35ccd4db5bacb13af6855b, type: 3}
-  switchAudio: {fileID: 0}
 --- !u!212 &6543688712099332836
 SpriteRenderer:
   m_ObjectHideFlags: 0

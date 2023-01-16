@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5141466276299474842}
   m_Layer: 0
   m_Name: Number Tile
-  m_TagString: Number
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  sceneIndex: 0
   origSpriteFileNo: 0
   newSpriteFileNo: 0
   number: 0
   sp: {fileID: 5141466276299474841}
-  numAudio: {fileID: 0}
 --- !u!212 &5141466276299474841
 SpriteRenderer:
   m_ObjectHideFlags: 0

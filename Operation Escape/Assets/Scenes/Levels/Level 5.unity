@@ -1594,6 +1594,10 @@ PrefabInstance:
       value: -0.0006713867
       objectReference: {fileID: 0}
     - target: {fileID: 6814825426230548991, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814825426230548991, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
       propertyPath: m_SpriteState.m_PressedSprite
       value: 
       objectReference: {fileID: 0}
@@ -1604,7 +1608,7 @@ PrefabInstance:
     - target: {fileID: 6814825426230548991, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1463674039}
+      objectReference: {fileID: 0}
     - target: {fileID: 6814825426230548991, guid: 94be4cd4894ad1d418ee5df6650a3468, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HintClicked
@@ -1825,17 +1829,21 @@ MonoBehaviour:
   tileNum: 0
   randomVariant: 0
   numtileVarIndex: 0
+  sceneIndex: 0
   width: 5
   height: 5
-  wallTile: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  wallTile: {fileID: 1941882745930290402, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   normalTile: {fileID: 2037578568917995069, guid: efecd2708f9e3b944a71738ba091e54a, type: 3}
   goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
   numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
   switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
-  tileType: 00000000000000000100000001000000010000000000000003000000000000000100000001000000010000000000000000000000000000000100000001000000010000000000000003000000000000000100000001000000010000000000000002000000
+  tileType: 01000000010000000000000000000000000000000100000003000000010000000000000000000000000000000100000001000000010000000000000000000000000000000100000003000000010000000000000000000000000000000100000002000000
   numTileVar0: 0500000003000000
   numTileVar1: 0500000003000000
   numTileVar2: 0600000003000000
+  tileList0: 
+  tileList1: 
+  tileList2: 
 --- !u!4 &1455379877
 Transform:
   m_ObjectHideFlags: 0
@@ -1861,7 +1869,6 @@ GameObject:
   - component: {fileID: 1463674038}
   - component: {fileID: 1463674037}
   - component: {fileID: 1463674040}
-  - component: {fileID: 1463674039}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1890,8 +1897,10 @@ MonoBehaviour:
   chosenVariant: 0
   currentNumber: 10
   initialNumber: 0
+  startTime: 0
+  elapsedTime: 0
+  time: 0
   isEqual: 0
-  animDone: 0
   isRestartPressed: 0
   isGamePaused: 0
   txtCurrentNumber: {fileID: 0}
@@ -1929,24 +1938,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1463674039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463674036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44075894a0c322945bd666a00fd5848d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listLen: 0
-  moves: 0
-  tileList: []
-  startingVertex: 11
-  parentTile: {fileID: 0}
-  player: {fileID: 310953586}
 --- !u!114 &1463674040
 MonoBehaviour:
   m_ObjectHideFlags: 0

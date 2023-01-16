@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NormalTile : MonoBehaviour {
-    [HideInInspector] public int sceneIndex;
+    [HideInInspector] public int sceneIndex, posX, posY;
     [HideInInspector] public GameObject player;
     public SpriteRenderer sp;
     public Sprite origSprite, newSprite;
@@ -22,8 +22,6 @@ public class NormalTile : MonoBehaviour {
         }
 
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-         
-        sp = GetComponent<SpriteRenderer>();
         player = GameObject.Find("Player");
     }
 
@@ -47,4 +45,4 @@ public class NormalTile : MonoBehaviour {
             sp.sprite = origSprite;
         }
     }
-}
+} 
