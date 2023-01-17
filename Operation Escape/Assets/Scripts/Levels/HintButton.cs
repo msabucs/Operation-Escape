@@ -50,6 +50,7 @@ public class HintButton : MonoBehaviour {
                     StartCoroutine(hintedNumTile.HintedNumber());
                 }
 
+                nextNumIndex++;
                 hintsLeft--;
                 FindObjectOfType<AudioManager>().Play("HintClicked");
             }

@@ -60,6 +60,7 @@ public class NumberTile : MonoBehaviour {
         }
     }
 
+
     // Display stepped number tile
     void OnTriggerEnter2D(Collider2D col) {
 
@@ -78,22 +79,28 @@ public class NumberTile : MonoBehaviour {
                 if(FindObjectOfType<HintButton>().chosenVariant == 0) {
 
                     currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(FindObjectOfType<HintButton>().hintNumList0[currentHintIndex] == number) {
-                        FindObjectOfType<HintButton>().nextNumIndex++;
+                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
+                        if(FindObjectOfType<HintButton>().hintNumList0[currentHintIndex] == number) {
+                            FindObjectOfType<HintButton>().nextNumIndex++;
+                        }
                     }
                 }
                 else if(FindObjectOfType<HintButton>().chosenVariant == 1) {
 
                     currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(FindObjectOfType<HintButton>().hintNumList1[currentHintIndex] == number) {
+                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
+                        if(FindObjectOfType<HintButton>().hintNumList1[currentHintIndex] == number) {
                             FindObjectOfType<HintButton>().nextNumIndex++;
+                        }
                     }
                 }
                 else {
 
                     currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(FindObjectOfType<HintButton>().hintNumList2[currentHintIndex] == number) {
+                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
+                        if(FindObjectOfType<HintButton>().hintNumList2[currentHintIndex] == number) {
                             FindObjectOfType<HintButton>().nextNumIndex++;
+                        }
                     }
                 }
             }

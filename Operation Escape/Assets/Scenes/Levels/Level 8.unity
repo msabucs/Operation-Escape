@@ -1599,7 +1599,7 @@ MonoBehaviour:
   nextNumIndex: 0
   chosenVariant: 0
   hintedNumTile: {fileID: 0}
-  hintsLeft: 3
+  hintsLeft: 1
   btnHint: {fileID: 880454204}
   btnHintInactive: {fileID: -4878367799618193593, guid: 8cd73d687a7aff14581cb2ba9d7715a0, type: 3}
   hintNumList0: 030000000600000006000000

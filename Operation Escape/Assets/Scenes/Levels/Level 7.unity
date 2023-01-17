@@ -2603,10 +2603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3275380e8df6aff40adc5636ac00d5c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintsLeft: 2
   nextNumIndex: 0
   chosenVariant: 0
   hintedNumTile: {fileID: 0}
+  hintsLeft: 1
   btnHint: {fileID: 880454206}
   btnHintInactive: {fileID: -4878367799618193593, guid: 8cd73d687a7aff14581cb2ba9d7715a0, type: 3}
   hintNumList0: 0400000008000000

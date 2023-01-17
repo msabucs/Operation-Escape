@@ -1958,7 +1958,7 @@ MonoBehaviour:
   nextNumIndex: 0
   chosenVariant: 0
   hintedNumTile: {fileID: 0}
-  hintsLeft: 4
+  hintsLeft: 2
   btnHint: {fileID: 880454206}
   btnHintInactive: {fileID: -4878367799618193593, guid: 8cd73d687a7aff14581cb2ba9d7715a0, type: 3}
   hintNumList0: 06000000060000000600000002000000
