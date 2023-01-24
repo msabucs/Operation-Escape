@@ -62,9 +62,9 @@ MonoBehaviour:
     volume: 0.2
     source: {fileID: 0}
   - name: PlayerDialogue
-    clip: {fileID: 8300000, guid: 86caca7b5b0b4f949bec09f2513a0ec2, type: 3}
+    clip: {fileID: 8300000, guid: 8acda7d71a2574848826cc1f7a5f61b4, type: 3}
     loop: 0
-    volume: 0.1
+    volume: 0.3
     source: {fileID: 0}
   - name: WallBump
     clip: {fileID: 8300000, guid: 2ce15c2034ce209429caf186a29eaec2, type: 3}

@@ -10,29 +10,26 @@ public class GameManager : MonoBehaviour {
     [HideInInspector] public float currentNumber, initialNumber, startTime, elapsedTime, time;
     [HideInInspector] public bool isEqual, isRestartPressed, isGamePaused;
     [HideInInspector] public Text txtCurrentNumber, txtGoal, txtGoalNumber, txtMoves, txtMovesNumber, txtRoom, txtRoomNumber;
-    [HideInInspector] public GameObject panelNewMechanic, panelEscaped;
     public List<int> goalNumberList;
     public List<float> currentNumberList;
     public int moves, roomNumber;
     public GameObject player, playerMP, panelPause, panelInGame;
     public Button btnNext;
+    public Animator animDialogue;
     Object[] btnNextSprites;
-    Image btnNextImage;
-    Animator animPanelNewMechanic, animPanelEscaped;
+    Image imgBtnNext;
     PlayerMovement playerMovement;
     NumberScreen numScreen;
     GridManager gridManager;
-    DialogueManager dialogueManager;
 
     void Start() {
 
         Scene scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;       
 
-        //gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
         numScreen = GameObject.Find("Number Screen").GetComponent<NumberScreen>();
         playerMovement = player.GetComponent<PlayerMovement>();
-
+        
         // Change level objective depending on the level variant
         if(sceneIndex != 2) {
 
@@ -46,40 +43,10 @@ public class GameManager : MonoBehaviour {
                 }
             }
         }
-        
-        // Level 0
-        if(sceneIndex == 2) {
-            dialogueManager = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
-        }
-
-        // Level 3, 5, 6, 7
-        if(sceneIndex == 5 || sceneIndex == 7 || sceneIndex == 8 || sceneIndex == 9){
-
-            // Do not trigger when in random level
-            if(FindObjectOfType<LevelCompleteChecker>().isRandom != true) {
-                panelNewMechanic = GameObject.Find("PanelNewMechanic");
-                animPanelNewMechanic = GameObject.Find("PanelNewMechanic").GetComponent<Animator>();
-                animPanelNewMechanic.Play("PanelMechIn");
-                //FindObjectOfType<AudioManager>().Play("NewMechanic");
-            }
-            else {
-                panelNewMechanic = GameObject.Find("PanelNewMechanic");
-                animPanelNewMechanic = GameObject.Find("PanelNewMechanic").GetComponent<Animator>();
-                //animPanelNewMechanic.Play("PanelMechIn");
-                panelNewMechanic.SetActive(false);
-            }
-        }
-
-        // Level 10
-        if(sceneIndex == 12) {
-            panelEscaped = GameObject.Find("PanelEscaped");
-            animPanelEscaped = GameObject.Find("PanelEscaped").GetComponent<Animator>();
-            panelEscaped.SetActive(false);
-        }
 
         btnNextSprites = Resources.LoadAll("Sprites/Buttons/HintNextLevelButtons");
 
-        btnNextImage = btnNext.GetComponent<Image>();
+        imgBtnNext = btnNext.GetComponent<Image>();
 
         txtCurrentNumber = GameObject.Find("TextCurrentNumber").GetComponent<Text>();
         txtGoal = GameObject.Find("TextGoal").GetComponent<Text>();
@@ -97,7 +64,14 @@ public class GameManager : MonoBehaviour {
         initialMoves = moves;
         initialNumber = currentNumber;
 
-        GoalNumber();
+        txtGoalNumber.text = goalNumber.ToString();
+
+        if(GameObject.Find("DialogueBox") != null) {
+
+            if(FindObjectOfType<LevelCompleteChecker>().isRandom == false && sceneIndex != 12)
+                animDialogue.enabled = true;
+        }
+
         MovesLeft();
         CurrentNumber();
     }
@@ -110,58 +84,15 @@ public class GameManager : MonoBehaviour {
         // Make next level button interactable when level is complete
         if(txtCurrentNumber.text == "ESCAPED") {
             btnNext.interactable = true;
-            btnNextImage.sprite = (Sprite)btnNextSprites[3];
+            imgBtnNext.sprite = (Sprite)btnNextSprites[3];
         }
         else {
             btnNext.interactable = false;
-            btnNextImage.sprite = (Sprite)btnNextSprites[5];
-        }
-
-        // Level 0
-        if(sceneIndex == 2) {
-
-            // Disable player movement when dialogue box is open
-            if(dialogueManager.dialogueCounter > 9 && dialogueManager.dialogueCounter != 12 && dialogueManager.dialogueCounter != 15) {
-                
-                // Trigger when player go to left after stepping on number tile
-                if(dialogueManager.dialogueCounter == 13) {
-
-                    if(dialogueManager.isLeft == false) {
-                        playerMovement.enabled = true;
-                    }
-                    else {
-                        playerMovement.enabled = false;
-                    }
-                }      
-            }
-            else {
-                if(playerMovement.isMoving == false)
-                    playerMovement.enabled = false;
-            }
-        }
-
-        // Level 3, 5, 6, 7
-        if(sceneIndex == 5 || sceneIndex == 7 || sceneIndex == 8 || sceneIndex == 9) {
-
-            // Do not trigger tutorial when in random level
-            if(FindObjectOfType<LevelCompleteChecker>().isRandom != true) {
-
-                if(panelNewMechanic.activeInHierarchy) {
-                    playerMovement.enabled = false;
-                }
-                else {
-                    playerMovement.enabled = true;
-                }
-            }
+            imgBtnNext.sprite = (Sprite)btnNextSprites[5];
         }
 
         MovesLeft();
         CurrentNumber();
-    }
-
-    // Change the goal number
-    void GoalNumber() {
-        txtGoalNumber.text = goalNumber.ToString();
     }
 
     // Change the current number
@@ -269,7 +200,7 @@ public class GameManager : MonoBehaviour {
     public void NextLevel() {
 
         // Random next level if you select random levels
-        if(FindObjectOfType<LevelCompleteChecker>().isRandom == true) {
+        if(FindObjectOfType<LevelCompleteChecker>().isRandom) {
 
             randomLevel = Random.Range(1, 11);
             
@@ -291,8 +222,9 @@ public class GameManager : MonoBehaviour {
             if(!(sceneIndex == 12))
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             else {
-                panelEscaped.SetActive(true);
-                animPanelEscaped.Play("Congrats");
+
+                animDialogue.enabled = true;
+                FindObjectOfType<DialogueTrigger>().StartDialogue();
             }
         }
 
@@ -305,44 +237,6 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(0);
         FindObjectOfType<LevelCompleteChecker>().isRandom = false;
         FindObjectOfType<AudioManager>().Play("ButtonClick");
-    }
-
-    // Display new gameplay mechanic
-    public void PanelMechanicClicked() {
-
-        //Level 3, 5, 6
-        if(sceneIndex == 5 || sceneIndex == 7 || sceneIndex == 8) {
-            
-            // Do not trigger when in random level
-            if(FindObjectOfType<LevelCompleteChecker>().isRandom != true) {
-
-                panelNewMechanic.SetActive(false);
-                FindObjectOfType<AudioManager>().Play("ButtonClick");
-            }
-        }
-        //Level 7
-        else if(sceneIndex == 9) {
-
-            // Do not trigger when in random level
-            if(FindObjectOfType<LevelCompleteChecker>().isRandom != true) {
-
-                GameObject panelMechanic = GameObject.Find("PanelMechanic");
-                GameObject panelMechanic1 = GameObject.Find("PanelMechanic (1)");
-                panelMechanic.SetActive(false);
-                animPanelNewMechanic.Play("PanelMech1In");
-                FindObjectOfType<AudioManager>().Play("ButtonClick");
-            }    
-        }
-    }
-
-    // Display another gameplay mechanic
-    public void PanelMechanic1Clicked() {
-
-        //Level 7
-        if(sceneIndex == 9) {
-            panelNewMechanic.SetActive(false);
-            FindObjectOfType<AudioManager>().Play("ButtonClick");
-        }
     }
 
     // Go to main menu after completing level 10
