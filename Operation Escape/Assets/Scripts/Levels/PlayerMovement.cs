@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
-    [HideInInspector] public int sceneIndex;
-    [HideInInspector] public bool isMoving;
+    [HideInInspector] public int sceneIndex, swipeDist = 300;
+    [HideInInspector] public bool isMoving, fingerDown;
     [HideInInspector] public float animX, animY;
-    [HideInInspector] public Vector2 startTouchPos, endTouchPos;
+    [HideInInspector] public Vector2 startTouchPos;
     public float moveSpeed = 5f;
     public Transform movePoint;
     public LayerMask obstacleLayer;
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
         // PC CONTROLLER
-        // Check if distance between player and move point is less than or equal to 0.5
+        /* Check if distance between player and move point is less than or equal to 0.5
         if (Vector3.Distance(transform.position, movePoint.position) <= 0.5f && !isMoving && gameManager.moves > 0) {
 
             // Move left and right
@@ -52,37 +52,46 @@ public class PlayerMovement : MonoBehaviour {
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f) {
                 StartCoroutine(MovePlayer(new Vector3(0, Input.GetAxisRaw("Vertical"), 0)));
             }
-        }
+        }*/
 
         // MOBILE CONTROLLER
-        /*if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+        if(fingerDown == false && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
 
-            startTouchPos = Input.GetTouch(0).position;
-            //Debug.Log(startTouchPos);
+            startTouchPos = Input.touches[0].position;
+            fingerDown = true;
         }
 
-        if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) {
-            
-            endTouchPos = Input.GetTouch(0).position;
-            //Debug.Log(endTouchPos);
+        if(fingerDown) {
 
-            // Only move player when screen is swiped on the tiles
-            if(startTouchPos.x >= 70f && startTouchPos.x <= 1000f && startTouchPos.y >= 400f && startTouchPos.y <= 1590f) {
+            // Move left
+            if(Input.touches[0].position.x <= startTouchPos.x - swipeDist) {
 
-                // Move left
-                if(endTouchPos.x + 300 < startTouchPos.x)
-                    StartCoroutine(MovePlayer(new Vector3(-1, 0, 0)));
-                // Move right
-                else if(endTouchPos.x > startTouchPos.x + 300)
-                    StartCoroutine(MovePlayer(new Vector3(1, 0, 0)));
-                // Move down
-                else if(endTouchPos.y + 300 < startTouchPos.y)
-                    StartCoroutine(MovePlayer(new Vector3(0, -1, 0)));
-                // Move up
-                else if(endTouchPos.y > startTouchPos.y + 300)
-                    StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
-            } 
-        }*/
+                fingerDown = false;
+                StartCoroutine(MovePlayer(new Vector3(-1, 0, 0)));
+            }
+            // Move right
+            else if(Input.touches[0].position.x >= startTouchPos.x + swipeDist) {
+
+                fingerDown = false;
+                StartCoroutine(MovePlayer(new Vector3(1, 0, 0)));
+            }
+            // Move down
+            else if(Input.touches[0].position.y <= startTouchPos.y  - swipeDist) {
+
+                fingerDown = false;
+                StartCoroutine(MovePlayer(new Vector3(0, -1, 0)));
+            }
+            // Move up
+            else if(Input.touches[0].position.y >= startTouchPos.y + swipeDist) {
+                
+                fingerDown = false;
+                StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
+            }
+        }
+        
+        if(fingerDown && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended) {
+            fingerDown = false;
+        }
     }
 
     IEnumerator MovePlayer(Vector3 direction) {
