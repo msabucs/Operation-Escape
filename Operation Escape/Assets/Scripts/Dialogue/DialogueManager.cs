@@ -56,8 +56,8 @@ public class DialogueManager : MonoBehaviour {
             }
         }
 
-        // FOR LEVEL 5, 6, 7
-        if(sceneIndex == 5 || sceneIndex == 7 || sceneIndex == 8 || sceneIndex == 9) {
+        // FOR LEVEL 3, 5, 7
+        if(sceneIndex == 5 || sceneIndex == 7 ||  sceneIndex == 9) {
 
             if(animator.GetBool("isOpen")) {
                 playerMovement.enabled = false;

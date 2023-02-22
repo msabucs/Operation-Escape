@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuButtons : MonoBehaviour {
-   //[HideInInspector] public Text txtName, txtInfo;
-   //[HideInInspector] public Button btnNumTile, btnGoalTile, btnSwitchTile;
-   //[HideInInspector] public Button btnAddMode, btnSubMode, btnMultiMode, btnDivMode;
    public Text txtName, txtInfo;
    public GameObject panelMain, panelTutorial, panelOptions, panelHelp, panelCredits, tiles;
    public Animator animator;
@@ -60,7 +57,7 @@ public class MainMenuButtons : MonoBehaviour {
    public void ExitGame() {
 
       Application.Quit();
-      UnityEditor.EditorApplication.isPlaying = false;
+      //UnityEditor.EditorApplication.isPlaying = false;
       FindObjectOfType<AudioManager>().Play("ButtonClick");
    }
    

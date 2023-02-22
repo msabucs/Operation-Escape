@@ -5,18 +5,39 @@ using UnityEngine.UI;
 
 public class HintButton : MonoBehaviour {
 
-    [HideInInspector] public int  nextNumIndex, chosenVariant;
+    [HideInInspector] public int nextNum, chosenVariant;
     [HideInInspector] public NumberTile hintedNumTile;
     public int hintsLeft;
     public Button btnHint;
     public Sprite btnHintInactive;
     public List<int> hintNumList0, hintNumList1, hintNumList2;
+    public Queue<int> hintQueue;
     GridManager gridManager;
     
     void Start() {
 
         gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
-        chosenVariant = gridManager.randomVariant;        
+        chosenVariant = gridManager.randomVariant;
+        hintQueue = new Queue<int>();
+
+        if(chosenVariant == 0) {
+
+            foreach(int n in hintNumList0) {
+                hintQueue.Enqueue(n);
+            }
+        }
+        else if(chosenVariant == 1)  {
+
+            foreach(int n in hintNumList1) {
+                hintQueue.Enqueue(n);
+            }
+        }
+        else if(chosenVariant == 2)  {
+
+            foreach(int n in hintNumList2) {
+                hintQueue.Enqueue(n);
+            }
+        }
     }
 
     void Update() {
@@ -32,25 +53,11 @@ public class HintButton : MonoBehaviour {
 
         if(hintsLeft > 0) {
 
-            if(nextNumIndex < hintNumList0.Count) {
-                
-                if(chosenVariant == 0) {
+            if(hintQueue.Count != 0) {
 
-                    hintedNumTile = GameObject.Find("Number Tile " +hintNumList0[nextNumIndex]).GetComponent<NumberTile>();
-                    StartCoroutine(hintedNumTile.HintedNumber());
-                }
-                else if(chosenVariant == 1) {
-
-                    hintedNumTile = GameObject.Find("Number Tile " +hintNumList1[nextNumIndex]).GetComponent<NumberTile>();
-                    StartCoroutine(hintedNumTile.HintedNumber());
-                }
-                else {
-
-                    hintedNumTile = GameObject.Find("Number Tile " +hintNumList2[nextNumIndex]).GetComponent<NumberTile>();
-                    StartCoroutine(hintedNumTile.HintedNumber());
-                }
-
-                nextNumIndex++;
+                nextNum = hintQueue.Dequeue();
+                hintedNumTile = GameObject.Find("Number Tile " +nextNum).GetComponent<NumberTile>();
+                StartCoroutine(hintedNumTile.HintedNumber());
                 hintsLeft--;
                 FindObjectOfType<AudioManager>().Play("HintClicked");
             }
@@ -58,9 +65,5 @@ public class HintButton : MonoBehaviour {
                 FindObjectOfType<AudioManager>().Play("WallBump");
             }
         }
-    }
-
-    public void RestartClicked() {
-        nextNumIndex = 0;
     }
 }

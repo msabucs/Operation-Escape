@@ -49,6 +49,7 @@ MonoBehaviour:
   sceneIndex: 0
   origSpriteFileNo: 0
   newSpriteFileNo: 0
+  hintSpriteFileNo: 0
   number: 0
   sp: {fileID: 5141466276299474841}
 --- !u!212 &5141466276299474841
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

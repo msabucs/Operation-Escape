@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
-    [HideInInspector] public int sceneIndex, swipeDist = 300;
+    [HideInInspector] public int sceneIndex, swipeDist = 50;
     [HideInInspector] public bool isMoving, fingerDown;
     [HideInInspector] public float animX, animY;
     [HideInInspector] public Vector2 startTouchPos;

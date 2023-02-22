@@ -79,11 +79,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 0
+  swipeDist: 50
   isMoving: 0
+  fingerDown: 0
   animX: 0
   animY: 0
   startTouchPos: {x: 0, y: 0}
-  endTouchPos: {x: 0, y: 0}
   moveSpeed: 5
   movePoint: {fileID: 955969829371374969}
   obstacleLayer:
@@ -130,7 +131,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2311659948842064771, guid: 5028fffb1c7ce0244b30348a18da909e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

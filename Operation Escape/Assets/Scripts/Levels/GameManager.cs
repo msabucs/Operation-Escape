@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour {
     [HideInInspector] public Vector3 initialPlayerPos, initialPlayerMPPos;
     [HideInInspector] public int goalNumber, initialMoves, sceneIndex, randomLevel, chosenVariant;
-    [HideInInspector] public float currentNumber, initialNumber, startTime, elapsedTime, time;
+    [HideInInspector] public float currentNumber, initialNumber, time;
     [HideInInspector] public bool isEqual, isRestartPressed, isGamePaused;
-    [HideInInspector] public Text txtCurrentNumber, txtGoal, txtGoalNumber, txtMoves, txtMovesNumber, txtRoom, txtRoomNumber;
+    [HideInInspector] public Text txtCurrentNumber, txtGoalNumber, txtMovesNumber;
     public List<int> goalNumberList;
     public List<float> currentNumberList;
     public int moves, roomNumber;
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour {
     Object[] btnNextSprites;
     Image imgBtnNext;
     PlayerMovement playerMovement;
-    NumberScreen numScreen;
+    RoomScreen roomScreen;
     GridManager gridManager;
 
     void Start() {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;       
 
-        numScreen = GameObject.Find("Number Screen").GetComponent<NumberScreen>();
+        roomScreen = GameObject.Find("Room Screen").GetComponent<RoomScreen>();
         playerMovement = player.GetComponent<PlayerMovement>();
         
         // Change level objective depending on the level variant
@@ -49,12 +50,8 @@ public class GameManager : MonoBehaviour {
         imgBtnNext = btnNext.GetComponent<Image>();
 
         txtCurrentNumber = GameObject.Find("TextCurrentNumber").GetComponent<Text>();
-        txtGoal = GameObject.Find("TextGoal").GetComponent<Text>();
         txtGoalNumber = GameObject.Find("TextGoalNumber").GetComponent<Text>();
-        txtMoves = GameObject.Find("TextMoves").GetComponent<Text>();
         txtMovesNumber = GameObject.Find("TextMovesNumber").GetComponent<Text>();
-        txtRoom = GameObject.Find("TextRoom").GetComponent<Text>();
-        txtRoomNumber = GameObject.Find("TextRoomNumber").GetComponent<Text>();
 
         // Get the initial position of the player and move point
         initialPlayerPos = player.transform.position;
@@ -191,7 +188,7 @@ public class GameManager : MonoBehaviour {
         currentNumber = initialNumber;
         txtCurrentNumber.text = currentNumber.ToString();
 
-        numScreen.isDone = false;
+        roomScreen.isDone = false;
 
         FindObjectOfType<AudioManager>().Play("ButtonClick");
     }

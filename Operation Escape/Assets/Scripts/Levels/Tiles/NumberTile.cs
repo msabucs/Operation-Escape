@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NumberTile : MonoBehaviour {
     [HideInInspector] public GameObject player;
     [HideInInspector] public static int currentOpNum;
-    [HideInInspector] public int sceneIndex, currentHintIndex, origSpriteFileNo, newSpriteFileNo, hintSpriteFileNo;
+    [HideInInspector] public int sceneIndex, origSpriteFileNo, newSpriteFileNo, hintSpriteFileNo;
     public int number; 
     public SpriteRenderer sp;
     Object[] numberTileSprites;
@@ -74,33 +74,11 @@ public class NumberTile : MonoBehaviour {
                 }
             }
 
+            // Only on levels with Hint
             if(GameObject.Find("Game Manager").GetComponent<HintButton>() != null) {
-
-                if(FindObjectOfType<HintButton>().chosenVariant == 0) {
-
-                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
-                        if(FindObjectOfType<HintButton>().hintNumList0[currentHintIndex] == number) {
-                            FindObjectOfType<HintButton>().nextNumIndex++;
-                        }
-                    }
-                }
-                else if(FindObjectOfType<HintButton>().chosenVariant == 1) {
-
-                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
-                        if(FindObjectOfType<HintButton>().hintNumList1[currentHintIndex] == number) {
-                            FindObjectOfType<HintButton>().nextNumIndex++;
-                        }
-                    }
-                }
-                else {
-
-                    currentHintIndex = FindObjectOfType<HintButton>().nextNumIndex;
-                    if(currentHintIndex != FindObjectOfType<HintButton>().hintNumList0.Count) {
-                        if(FindObjectOfType<HintButton>().hintNumList2[currentHintIndex] == number) {
-                            FindObjectOfType<HintButton>().nextNumIndex++;
-                        }
+                if(FindObjectOfType<HintButton>().hintQueue.Count != 0) {
+                    if(FindObjectOfType<HintButton>().hintQueue.Peek() == number) {
+                        FindObjectOfType<HintButton>().hintQueue.Dequeue();
                     }
                 }
             }
