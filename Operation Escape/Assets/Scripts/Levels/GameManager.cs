@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour {
         if(isGamePaused) {
             txtCurrentNumber.text = "PAUSED";
             playerMovement.enabled = false;
+            playerMovement.fingerDown = false;
         }
         else {
             txtCurrentNumber.text = currentNumber.ToString();
@@ -135,7 +136,8 @@ public class GameManager : MonoBehaviour {
             if(sceneIndex == 2)
                 FindObjectOfType<LevelCompleteChecker>().isTutorialDone = true;
 
-            FindObjectOfType<LevelCompleteChecker>().LevelChecker();
+            if(isEqual)
+                FindObjectOfType<LevelCompleteChecker>().LevelChecker();
         }
 
         // Reset moves number and enable player movement when level restarts

@@ -58,34 +58,35 @@ public class PlayerMovement : MonoBehaviour {
         if(fingerDown == false && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
 
             startTouchPos = Input.touches[0].position;
+            startTouchPos = Input.mousePosition;
             fingerDown = true;
         }
 
         if(fingerDown) {
 
-            // Move left
-            if(Input.touches[0].position.x <= startTouchPos.x - swipeDist) {
+            if(Input.touches[0].position.y >= startTouchPos.y + swipeDist) {
 
                 fingerDown = false;
+                //Debug.Log("Up");
+                StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
+            }
+            else if(Input.touches[0].position.x <= startTouchPos.x - swipeDist) {
+
+                fingerDown = false;
+                //Debug.Log("Left");
                 StartCoroutine(MovePlayer(new Vector3(-1, 0, 0)));
             }
-            // Move right
             else if(Input.touches[0].position.x >= startTouchPos.x + swipeDist) {
 
                 fingerDown = false;
+                //Debug.Log("Right");
                 StartCoroutine(MovePlayer(new Vector3(1, 0, 0)));
             }
-            // Move down
-            else if(Input.touches[0].position.y <= startTouchPos.y  - swipeDist) {
-
-                fingerDown = false;
-                StartCoroutine(MovePlayer(new Vector3(0, -1, 0)));
-            }
-            // Move up
-            else if(Input.touches[0].position.y >= startTouchPos.y + swipeDist) {
+            else if(Input.touches[0].position.y <= startTouchPos.y - swipeDist) {
                 
                 fingerDown = false;
-                StartCoroutine(MovePlayer(new Vector3(0, 1, 0)));
+                //Debug.Log("Down");
+                StartCoroutine(MovePlayer(new Vector3(0, -1, 0)));
             }
         }
         
