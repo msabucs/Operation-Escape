@@ -53,10 +53,6 @@ public class GameManager : MonoBehaviour {
         txtGoalNumber = GameObject.Find("TextGoalNumber").GetComponent<Text>();
         txtMovesNumber = GameObject.Find("TextMovesNumber").GetComponent<Text>();
 
-        // Get the initial position of the player and move point
-        initialPlayerPos = player.transform.position;
-        initialPlayerMPPos = playerMP.transform.position;
-
         // Get the initial number of moves and number
         initialMoves = moves;
         initialNumber = currentNumber;
@@ -179,8 +175,8 @@ public class GameManager : MonoBehaviour {
         time = 0;
 
         // Reset player position
-        player.transform.position = initialPlayerPos;
-        playerMP.transform.position = initialPlayerMPPos;
+        player.transform.position = playerMovement.initialPos;
+        playerMP.transform.position = playerMovement.initialPos;
 
         moves = initialMoves;        
         

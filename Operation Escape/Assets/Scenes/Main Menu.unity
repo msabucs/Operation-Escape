@@ -454,6 +454,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -502,11 +526,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &66618737 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 66618736}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &74581296
@@ -661,6 +689,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -709,11 +761,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &80467316 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 80467315}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &89232962
@@ -1801,6 +1857,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1849,11 +1921,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &396337452 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 396337451}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &400532156
@@ -2217,6 +2293,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2265,11 +2361,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &427474439 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 427474438}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &460739364
@@ -2595,6 +2695,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2643,11 +2767,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &528879267 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 528879266}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &546376913
@@ -2855,13 +2983,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566814776}
+  - component: {fileID: 566814777}
   m_Layer: 0
-  m_Name: Tiles
+  m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &566814776
 Transform:
   m_ObjectHideFlags: 0
@@ -2895,6 +3024,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566814777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566814775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648c2b4f9dd92854fa0ddfa2cfa49d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aspectRatio: 0
 --- !u!1 &567734015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,6 +3905,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3811,11 +3977,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &771339592 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 771339591}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &799070972
@@ -4067,6 +4237,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4115,11 +4301,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &923017568 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 923017567}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &924268851
@@ -4341,6 +4531,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4389,11 +4599,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &971685517 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 971685516}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &992417656
@@ -4561,7 +4775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036621094, y: 0.7783203}
+  m_AnchoredPosition: {x: 0.00048828125, y: 0.7783203}
   m_SizeDelta: {x: 0, y: -0.72143555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067894405
@@ -5017,6 +5231,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -5065,11 +5299,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1185717946 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1185717945}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1189616517
@@ -5373,6 +5611,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -5421,11 +5683,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1262553069 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1262553068}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1326152625
@@ -6493,6 +6759,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -6541,11 +6831,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1513814079 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1513814078}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1525314707
@@ -7174,6 +7468,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -7222,11 +7536,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1631021132 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1631021131}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1681171731
@@ -7357,6 +7675,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7405,11 +7743,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1703012061 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1703012060}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732179769
@@ -7540,6 +7882,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -7588,11 +7954,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1787577720 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1787577719}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1809543371
@@ -7854,6 +8224,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7906,7 +8316,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1909621121 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1909621120}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1925343040
@@ -8049,6 +8459,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -8097,11 +8531,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &1985744833 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 1985744832}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2018297879
@@ -8111,6 +8549,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8159,11 +8613,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &2018297880 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 2018297879}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2032964608
@@ -8252,6 +8710,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -8300,11 +8782,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &2116409229 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 2116409228}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2135287526
@@ -8314,6 +8800,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566814776}
     m_Modifications:
+    - target: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139607699939558590, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -8362,11 +8860,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8764980666887083703, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
 --- !u!4 &2135287527 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8764980666887083696, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5326912341037601593, guid: b22681629294ba04e8e94f3ac8cc4d47, type: 3}
   m_PrefabInstance: {fileID: 2135287526}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &101763835127513262

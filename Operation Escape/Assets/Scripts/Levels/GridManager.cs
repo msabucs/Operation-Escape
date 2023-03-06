@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GridManager : MonoBehaviour {
 
     [HideInInspector] public int tileNum, randomVariant, numtileVarIndex, sceneIndex;
+    public GameObject grid;
     public int width, height;
     public WallTile wallTile;
     public NormalTile normalTile;
@@ -39,15 +40,18 @@ public class GridManager : MonoBehaviour {
                 // Spawn Normal Tile
                 if (tileType[tileNum] == 1) {
                     var spawnedTile = Instantiate(normalTile, new Vector3(x-2, y-3), Quaternion.identity);
+                    spawnedTile.transform.parent = grid.transform;
                 }
                 // Spawn Goal Tile
                 else if (tileType[tileNum] == 2) {
                     var spawnedTile = Instantiate(goalTile, new Vector3(x-2, y-3), Quaternion.identity);
+                    spawnedTile.transform.parent = grid.transform;
                 }
                 // Spawn Number Tile
                 else if (tileType[tileNum] == 3) {
 
                     var spawnedTile = Instantiate(numberTile, new Vector3(x-2, y-3), Quaternion.identity);
+                    spawnedTile.transform.parent = grid.transform;
 
                     if (randomVariant == 0) {
                         spawnedTile.number = numTileVar0[numtileVarIndex];
@@ -67,10 +71,12 @@ public class GridManager : MonoBehaviour {
                 // Spawn Switch Tile
                 else if (tileType[tileNum] == 4) {
                     var spawnedTile = Instantiate(switchTile, new Vector3(x-2, y-3), Quaternion.identity);
+                    spawnedTile.transform.parent = grid.transform;
                 }
                 // Spawn Wall Tile
                 else {
                     var spawnedTile = Instantiate(wallTile, new Vector3(x-2, y-3), Quaternion.identity);
+                    spawnedTile.transform.parent = grid.transform;
                 }
 
                 tileNum++;

@@ -11,7 +11,4 @@ public class WallTile : MonoBehaviour {
     void Update() {
         
     }
-
-    void OnMouseDown() {
-    }
 }

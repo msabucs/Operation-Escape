@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour {
     [HideInInspector] public int sceneIndex, swipeDist = 50;
     [HideInInspector] public bool isMoving, fingerDown;
-    [HideInInspector] public float animX, animY;
+    [HideInInspector] public float animX, animY, aspectRatio, scaleValue, columnPosValue;
+    [HideInInspector] public float[] columnPosList = new float[5];
     [HideInInspector] public Vector2 startTouchPos;
+    [HideInInspector] public Vector3 newPosition, initialPos;
+    public int columnIndex;
     public float moveSpeed = 5f;
     public Transform movePoint;
     public LayerMask obstacleLayer;
@@ -17,6 +20,8 @@ public class PlayerMovement : MonoBehaviour {
     DialogueManager dialogueManager;
 
     void Start() {
+
+        Adjust();
 
         Scene scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;
@@ -33,6 +38,44 @@ public class PlayerMovement : MonoBehaviour {
         movePoint.parent = null;
 
         animator.enabled = false;
+    }
+
+    void Adjust() {
+
+        aspectRatio = (float)Screen.height / (float)Screen.width;
+
+        if(aspectRatio >= 2.11f) {
+
+            //Debug.Log("9:19");
+            scaleValue = 0.85f;
+        }
+        else if(aspectRatio >= 2.055f) {
+
+            //Debug.Log("9:18.5");
+            scaleValue = 0.87f;
+        }
+        else if(aspectRatio >= 2f) {
+
+            //Debug.Log("9:18");
+            scaleValue = 0.9f;          
+        }
+        else {
+
+            Debug.Log("9:16");
+            scaleValue = 1f;
+        }
+
+        this.transform.localScale = new Vector3(1.5f * scaleValue, 1.5f, 1);
+        columnPosValue -= scaleValue * 2;
+
+        for(int x = 0; x < columnPosList.Length; x++) {
+            
+            columnPosList[x] = columnPosValue;
+            columnPosValue += scaleValue;
+        }
+
+        initialPos = new Vector3 (columnPosList[columnIndex], transform.position.y, transform.position.z);
+        transform.position = initialPos;
     }
 
     void Update() {
@@ -97,11 +140,18 @@ public class PlayerMovement : MonoBehaviour {
 
     IEnumerator MovePlayer(Vector3 direction) {
 
-        isMoving = true;
-        Vector3 newPosition = movePoint.position + direction;
+        isMoving = true;      
 
         animX = direction.x;
         animY = direction.y;
+
+        if(scaleValue != 1) {
+
+            if(direction.x == 1f) direction.x -= (1 - scaleValue);
+            else if(direction.x == -1f) direction.x += (1 - scaleValue);
+        }
+
+        newPosition = movePoint.position + direction; 
         
         // Play animation left
         if(animX == -1) {
