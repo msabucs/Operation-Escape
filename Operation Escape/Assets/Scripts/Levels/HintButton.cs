@@ -5,48 +5,38 @@ using UnityEngine.UI;
 
 public class HintButton : MonoBehaviour {
 
-    [HideInInspector] public int nextNum, chosenVariant;
+    [HideInInspector] public int nextNum, hintsLeft;
+    [HideInInspector] public List<int> hintNumbers;
     [HideInInspector] public NumberTile hintedNumTile;
-    public int hintsLeft;
     public Button btnHint;
     public Sprite btnHintInactive;
-    public List<int> hintNumList0, hintNumList1, hintNumList2;
     public Queue<int> hintQueue;
-    GridManager gridManager;
+    EquationFinder eqFinder;
     
     void Start() {
 
-        gridManager = GameObject.Find("Grid Manager").GetComponent<GridManager>();
-        chosenVariant = gridManager.randomVariant;
+        eqFinder = GameObject.Find("Game Manager").GetComponent<EquationFinder>();
         hintQueue = new Queue<int>();
-
-        if(chosenVariant == 0) {
-
-            foreach(int n in hintNumList0) {
-                hintQueue.Enqueue(n);
-            }
-        }
-        else if(chosenVariant == 1)  {
-
-            foreach(int n in hintNumList1) {
-                hintQueue.Enqueue(n);
-            }
-        }
-        else if(chosenVariant == 2)  {
-
-            foreach(int n in hintNumList2) {
-                hintQueue.Enqueue(n);
-            }
-        }
+        StartCoroutine(GetHintNumbers());
     }
 
     void Update() {
 
         if(hintsLeft <= 0) {
-
             btnHint.interactable = false;
             btnHint.image.sprite = btnHintInactive;
         }
+    }
+
+    // Adding a short delay before getting hint numbers
+    IEnumerator GetHintNumbers() {
+
+        yield return new WaitForSeconds(0.25f);
+        hintNumbers = eqFinder.finalEquation;
+        hintsLeft = hintNumbers.Count - 1;
+
+        foreach(int n in hintNumbers)
+            hintQueue.Enqueue(n);        
     }
 
     public void Hint() {

@@ -44,11 +44,26 @@ public class PlayerMovement : MonoBehaviour {
 
         aspectRatio = (float)Screen.height / (float)Screen.width;
 
-        if(aspectRatio >= 2.11f) {
+        if(aspectRatio >= 2.223f) {
+
+            //Debug.Log("9:20");
+            scaleValue = 0.8f;
+        }
+        else if(aspectRatio >= 2.166f) {
+
+            //Debug.Log("9:19.5");
+            scaleValue = 0.83f;
+        }
+        else if(aspectRatio >= 2.11f) {
 
             //Debug.Log("9:19");
             scaleValue = 0.85f;
         }
+        /*else if(aspectRatio >= 2.074f) {
+
+            Debug.Log("9:18.7");
+            scaleValue = 0.87f;
+        }*/
         else if(aspectRatio >= 2.055f) {
 
             //Debug.Log("9:18.5");
@@ -59,10 +74,35 @@ public class PlayerMovement : MonoBehaviour {
             //Debug.Log("9:18");
             scaleValue = 0.9f;          
         }
-        else {
+        else if(aspectRatio >= 1.903f) {
 
-            Debug.Log("9:16");
+            //Debug.Log("10:19");
+            scaleValue = 0.95f;      
+        }
+        else if(aspectRatio >= 1.777f){
+
+            //Debug.Log("9:16");
             scaleValue = 1f;
+        }
+        else if (aspectRatio >= 1.668f){
+
+            //Debug.Log("3:5");
+            scaleValue = 1.07f;
+        }
+        else if(aspectRatio >= 1.602f) {
+
+            //Debug.Log("10:16");
+            scaleValue = 1.13f;
+        }
+        else if(aspectRatio >= 1.501f) {
+
+            //Debug.Log("2:3");
+            scaleValue = 1.2f;
+        }
+        else if(aspectRatio >= 1.333f) {
+
+            //Debug.Log("3:4");
+            scaleValue = 1.35f;
         }
 
         this.transform.localScale = new Vector3(1.5f * scaleValue, 1.5f, 1);
