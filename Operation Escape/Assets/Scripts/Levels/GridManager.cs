@@ -203,8 +203,8 @@ public class GridManager : MonoBehaviour {
             visited.Add(curTile);
         }
 
-        if(!visited.Contains(start)){
-            Debug.Log("null");return null;}
+        if(!visited.Contains(start))
+            return null;
 
         Queue<Vector2Int> path = new Queue<Vector2Int>();
         Vector2Int curPathTile = start;

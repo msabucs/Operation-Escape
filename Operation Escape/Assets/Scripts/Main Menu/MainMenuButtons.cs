@@ -85,7 +85,7 @@ public class MainMenuButtons : MonoBehaviour {
       panelOptions.SetActive(false);
       tiles.SetActive(false);
       txtName.text = "";
-      txtInfo.text = "Click the tiles\nor operators\n";
+      txtInfo.text = "Tap the tiles\nor operators\n";
       FindObjectOfType<AudioManager>().Play("ButtonClick");
    }
 

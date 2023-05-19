@@ -79,6 +79,7 @@ public class NumberTile : MonoBehaviour {
                 if(FindObjectOfType<HintButton>().hintQueue.Count != 0) {
                     if(FindObjectOfType<HintButton>().hintQueue.Peek() == number) {
                         FindObjectOfType<HintButton>().hintQueue.Dequeue();
+                        FindObjectOfType<HintButton>().hintsLeft--;
                     }
                 }
             }

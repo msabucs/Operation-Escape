@@ -1986,11 +1986,11 @@ MonoBehaviour:
   txtCurrentNumber: {fileID: 0}
   txtGoalNumber: {fileID: 0}
   txtMovesNumber: {fileID: 0}
-  goalNumberList: dbffffffd2ffffffe4ffffff
+  goalNumberList: dbffffffd2ffffffc9ffffff
   currentNumberList:
   - 11
   - 13
-  - 9
+  - 15
   moves: 24
   roomNumber: 10
   player: {fileID: 85732449}

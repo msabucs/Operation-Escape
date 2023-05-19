@@ -77,7 +77,7 @@ public class EquationFinder : MonoBehaviour {
             var currentMV = IsEquationCorrect(equation, distanceDict, posNumbers, playerToNumDist, numToGoalDist, numToSwitchDist, operators, 
             initialOp, playerToSwitchDist, goal, initialNum, operatorCount, isSwitch);
             if(lowerMV == 0 || lowerMV > currentMV) {
-                //Debug.Log("The best equation is: " +equation +" MV: " +currentMV);
+                Debug.Log("The best equation is: " +equation +" MV: " +currentMV);
                 lowerMV = currentMV;
                 bestEquation = equation;
             }            

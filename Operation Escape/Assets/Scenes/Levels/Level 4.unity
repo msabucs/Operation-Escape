@@ -156,6 +156,18 @@ MonoBehaviour:
   randomVariant: 0
   numtileVarIndex: 0
   sceneIndex: 0
+  playerToSwitchDist: 0
+  isSwitch: 0
+  player: {fileID: 0}
+  start: {x: 0, y: 0}
+  end: {x: 0, y: 0}
+  playerPos: {x: 0, y: 0}
+  goalPos: {x: 0, y: 0}
+  switchPos: {x: 0, y: 0}
+  numbers: 
+  playerToNumDist: 
+  numToGoalDist: 
+  numToSwitchDist: 
   grid: {fileID: 1807060590}
   width: 5
   height: 5
@@ -164,10 +176,10 @@ MonoBehaviour:
   goalTile: {fileID: 8368067504448721981, guid: 130bd31c3918a594abcd8194af87977c, type: 3}
   numberTile: {fileID: 5141466276299474840, guid: f4f49e74711c91b4e97ebf3b5416d694, type: 3}
   switchTile: {fileID: 6543688712099332839, guid: 6c3b4a00a9e598f4d86285341eb87080, type: 3}
-  tileType: 00000000010000000100000000000000000000000000000001000000010000000300000000000000000000000100000003000000010000000000000000000000030000000100000001000000000000000000000000000000010000000200000000000000
-  numTileVar0: 010000000900000007000000
-  numTileVar1: 010000000900000007000000
-  numTileVar2: 010000000700000008000000
+  tileType: 00000000000000000000000001000000010000000000000001000000010000000300000000000000000000000100000003000000010000000000000000000000030000000100000001000000000000000200000001000000000000000000000000000000
+  numTileVar0: 090000000100000007000000
+  numTileVar1: 090000000100000007000000
+  numTileVar2: 090000000100000006000000
 --- !u!4 &11511976
 Transform:
   m_ObjectHideFlags: 0
@@ -1278,11 +1290,11 @@ MonoBehaviour:
   txtCurrentNumber: {fileID: 0}
   txtGoalNumber: {fileID: 0}
   txtMovesNumber: {fileID: 0}
-  goalNumberList: 120000001300000012000000
+  goalNumberList: 120000001300000013000000
   currentNumberList:
   - 3
   - 4
-  - 4
+  - 5
   moves: 13
   roomNumber: 4
   player: {fileID: 1749131692}
@@ -1519,7 +1531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 955969829849606671, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 955969829849606671, guid: 2160576830f8a1e40a51b10e1436807c, type: 3}
       propertyPath: m_LocalPosition.z
